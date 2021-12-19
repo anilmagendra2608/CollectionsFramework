@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class ArrayListDemo {
         public static void main(String[] args) {
             arrayListExample();
-            VirtualCapacityInArrayList();
+            virtualCapacityInArrayList();
         }
 
         public static void arrayListExample() {
@@ -20,7 +20,7 @@ public class ArrayListDemo {
             System.out.println("Element at index 4 = " + ar.get(4));
         }
 
-        public static void VirtualCapacityInArrayList() {
+        public static void virtualCapacityInArrayList() {
             ArrayList<Object> ar = new ArrayList(20);
             ar.add(300);
             System.out.println(ar.size());
