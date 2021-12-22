@@ -2,6 +2,8 @@ package ArrayListConcepts;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class ArrayListMethods {
     public static void main(String args[]){
@@ -61,5 +63,11 @@ public class ArrayListMethods {
         ArrayList<Integer> num1 = new ArrayList<Integer>(Arrays.asList(1,2,3,4,5,6,7,8,9));
         num1.removeIf(e -> e%2 != 0 ); // remove the no from list if no is divisible by 2 = remove even no
         System.out.println(num1);
+
+        //retainAll()
+        ArrayList<String> nameList = new ArrayList<String>(Arrays.asList("Test1", "Test2", "Test3", "Test4", "Test1"));
+        nameList.retainAll(Collections.singleton("Test1"));
+        System.out.println("After retainAll() method use = " + nameList);
+
     }
 }
