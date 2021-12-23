@@ -68,6 +68,5 @@ public class ArrayListMethods {
         ArrayList<String> nameList = new ArrayList<String>(Arrays.asList("Test1", "Test2", "Test3", "Test4", "Test1"));
         nameList.retainAll(Collections.singleton("Test1"));
         System.out.println("After retainAll() method use = " + nameList);
-
     }
 }
