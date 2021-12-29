@@ -1,9 +1,7 @@
 package ArrayListConcepts;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.LinkedHashSet;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class RemoveDuplicateElementsFromArrayList {
 
@@ -26,7 +24,8 @@ public class RemoveDuplicateElementsFromArrayList {
 
         // 2. Using JDK 1.8 Stream concept
         ArrayList<Integer> marksList = new ArrayList<Integer>(Arrays.asList(11,22,22,33,11,44,44,44,55,66,77,88,99,99));
-
+        List<Integer> listWithUniqueValues = marksList.stream().distinct().collect(Collectors.toList());
+        System.out.println("After Using Stream() - Unique values in list = " +listWithUniqueValues);
 
     }
 }
