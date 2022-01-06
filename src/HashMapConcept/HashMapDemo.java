@@ -48,5 +48,9 @@ public class HashMapDemo {
             String value = entry.getValue();
             System.out.println("Key = " +key + "Value = " +value);
         }
+
+        // Iterate using Java8 foreach and lambda
+        System.out.println("Iterator by using lambda and foreach");
+        testHashMap.forEach((k,v) -> System.out.println("Key = " + k + " Value= " +v));
     }
 }
