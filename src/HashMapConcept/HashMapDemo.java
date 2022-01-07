@@ -38,7 +38,6 @@ public class HashMapDemo {
             System.out.println("Key = " + key + " Value=" + value);
         }
 
-
         // Iterator using entrySet()
         Iterator<Map.Entry<String, String>> it1 = testHashMap.entrySet().iterator();
         System.out.println("Iterator by using entrySet()");
