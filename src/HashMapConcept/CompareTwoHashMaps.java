@@ -38,5 +38,8 @@ public class CompareTwoHashMaps {
         map4.put(4, "E"); // This is extra key we need to find
         HashSet<Integer> CombineKeys = new HashSet<Integer>(map1.keySet());
 
+        CombineKeys.addAll(map4.keySet());
+        CombineKeys.removeAll(map1.keySet());
+        System.out.println("After Using HashSet We found Extra Key Among 2 HashMaps = " + CombineKeys);
     }
 }
