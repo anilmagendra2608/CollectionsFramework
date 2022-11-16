@@ -10,7 +10,7 @@ public class ArrayListDemo {
 
         public static void arrayListExample() {
             ArrayList<Object> ar = new ArrayList();
-            ar.add(100);
+            ar.add(10000);
             ar.add(200);
             ar.add("Testing");
             ar.add("a");
